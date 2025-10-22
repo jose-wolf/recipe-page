@@ -1,0 +1,228 @@
+:root {
+  --color-rose800: rgb(122, 40, 78);
+  --color-rose50: rgb(255, 247, 251);
+  --color-stone900: rgb(49, 46, 44);
+  --color-stone600: rgb(95, 86, 77);
+  --color-stone150: rgb(227, 221, 215);
+  --color-stone100: rgb(243, 229, 215);
+  --color-brown800: rgb(133, 70, 50);
+  --color-white: rgb(255, 255, 255);
+  --font-title: "Young Serif", serif;
+  --font-paragraph: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-omelete {
+  max-width: 23.4375rem;
+  width: 100%;
+  display: block;
+}
+
+main {
+  max-height: 100%;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+}
+
+/* Texto introdutório */
+
+main > header > .title {
+  max-width: 19.4375rem;
+  margin-bottom: 2rem;
+}
+
+main > header > .title > h1 {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-title);
+  font-size: 2.25rem;
+  color: var(--color-stone900);
+  letter-spacing: 100%;
+}
+
+main > header > .title > p {
+  font-size: 1rem;
+  font-family: var(--font-paragraph);
+  line-height: 150%;
+  color: var(--color-stone600);
+}
+
+/* tempo de preparação */
+
+.preparation-time {
+  background-color: var(--color-rose50);
+  padding: 1.5rem;
+  max-width: 19.4375rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.preparation-time > h2 {
+  font-family: var(--font-title);
+  color: var(--color-rose800);
+  font-size: 1.25rem;
+}
+
+.preparation-time > ul {
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+.preparation-time > ul > li {
+  padding-left: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-paragraph);
+  color: var(--color-stone600);
+}
+
+.preparation-time li::marker {
+  color: var(--color-rose800);
+}
+
+.preparation-time > ul > li > span {
+  font-weight: bold;
+}
+
+/* Ingredients */
+
+.ingredients {
+  margin-top: 2rem;
+  max-width: 19.4375rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.ingredients > h2 {
+  font-family: var(--font-title);
+  color: var(--color-brown800);
+  font-size: 1.75rem;
+  line-height: 100%;
+}
+
+.ingredients > ul {
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+.ingredients > ul > li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: var(--color-stone600);
+  font-family: var(--font-paragraph);
+  line-height: 150%;
+}
+
+.ingredients > ul > li::marker {
+  color: var(--color-rose800);
+}
+
+/* divisao */
+
+hr {
+  border: 0;
+  margin: 2rem 0;
+  background-color: var(--color-stone150);
+  height: 1px;
+  max-width: 19.4375rem;
+}
+
+/* Instrucoes */
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 19.4375rem;
+  gap: 1.5rem;
+}
+
+.instructions > h2 {
+  color: var(--color-brown800);
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  line-height: 100%;
+}
+
+.instructions > ol {
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  color: var(--color-stone600);
+  font-family: var(--font-paragraph);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.instructions > ol > li {
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-family: var(--font-paragraph);
+  line-height: 150%;
+}
+
+.instructions > ol > li::marker {
+  color: var(--color-brown800);
+}
+
+.instructions > ol > li > span {
+  font-weight: bold;
+}
+
+/* Nutrition */
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: 19.4375rem;
+}
+
+.nutrition > h2 {
+  color: var(--color-brown800);
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  line-height: 100%;
+}
+
+.nutrition > p {
+  font-family: var(--font-paragraph);
+  color: var(--color-stone600);
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  gap: 0.75rem;
+  font-family: var(--font-paragraph);
+  font-size: 1rem;
+}
+
+.nutrition td {
+  color: var(--color-stone600);
+  border-bottom: 1px solid var(--color-stone150);
+  padding: 0.75rem 2rem;
+}
+
+.nutrition .value {
+  color: var(--color-brown800);
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.nutrition tr:last-child td {
+  border-bottom: none;
+}
