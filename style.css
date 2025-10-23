@@ -17,25 +17,26 @@
   box-sizing: border-box;
 }
 
-.img-omelete {
+body {
+  background-color: var(--color-white);
+  max-height: 100%;
+}
+
+.main {
+  padding: 2.5rem 2rem 2.5rem 2rem;
   max-width: 23.4375rem;
-  width: 100%;
+}
+
+.img-omelete {
+  max-width: 100%;
   display: block;
 }
-
-main {
-  max-height: 100%;
-  padding: 2.5rem 2rem 2.5rem 2rem;
-}
-
 /* Texto introdutório */
-
-main > header > .title {
-  max-width: 19.4375rem;
+.main > header > .title {
   margin-bottom: 2rem;
 }
 
-main > header > .title > h1 {
+.main > header > .title > h1 {
   margin-bottom: 1.5rem;
   font-family: var(--font-title);
   font-size: 2.25rem;
@@ -43,7 +44,7 @@ main > header > .title > h1 {
   letter-spacing: 100%;
 }
 
-main > header > .title > p {
+.main > header > .title > p {
   font-size: 1rem;
   font-family: var(--font-paragraph);
   line-height: 150%;
@@ -55,7 +56,6 @@ main > header > .title > p {
 .preparation-time {
   background-color: var(--color-rose50);
   padding: 1.5rem;
-  max-width: 19.4375rem;
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
@@ -94,8 +94,6 @@ main > header > .title > p {
 
 .ingredients {
   margin-top: 2rem;
-  max-width: 19.4375rem;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -134,7 +132,6 @@ hr {
   margin: 2rem 0;
   background-color: var(--color-stone150);
   height: 1px;
-  max-width: 19.4375rem;
 }
 
 /* Instrucoes */
@@ -143,7 +140,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 19.4375rem;
+
   gap: 1.5rem;
 }
 
@@ -186,7 +183,6 @@ hr {
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
-  max-width: 19.4375rem;
 }
 
 .nutrition > h2 {
@@ -225,4 +221,44 @@ hr {
 
 .nutrition tr:last-child td {
   border-bottom: none;
+}
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--color-stone100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 3rem;
+  }
+
+  main {
+    background-color: var(--color-white);
+    max-width: 38.5rem;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  main > .img-omelete {
+    border-radius: 0.75rem;
+    max-width: 100%;
+  }
+
+  .main {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main > header > .title > h1 {
+    font-size: 2.5rem;
+  }
 }
