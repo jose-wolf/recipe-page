@@ -42,6 +42,7 @@ body {
   font-size: 2.25rem;
   color: var(--color-stone900);
   letter-spacing: 100%;
+  font-weight: 400;
 }
 
 .main > header > .title > p {
@@ -67,6 +68,7 @@ body {
   font-family: var(--font-title);
   color: var(--color-rose800);
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .preparation-time > ul {
@@ -149,6 +151,7 @@ hr {
   font-family: var(--font-title);
   font-size: 1.75rem;
   line-height: 100%;
+  font-weight: 400;
 }
 
 .instructions > ol {
@@ -190,6 +193,7 @@ hr {
   font-family: var(--font-title);
   font-size: 1.75rem;
   line-height: 100%;
+  font-weight: 400;
 }
 
 .nutrition > p {
