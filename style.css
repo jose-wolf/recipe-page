@@ -22,7 +22,7 @@ body {
   max-height: 100%;
 }
 
-.main {
+.container {
   padding: 2.5rem 2rem 2.5rem 2rem;
   max-width: 23.4375rem;
 }
@@ -32,11 +32,11 @@ body {
   display: block;
 }
 /* Texto introdutório */
-.main > header > .title {
+.container > header > .title {
   margin-bottom: 2rem;
 }
 
-.main > header > .title > h1 {
+.container > header > .title > h1 {
   margin-bottom: 1.5rem;
   font-family: var(--font-title);
   font-size: 2.25rem;
@@ -45,7 +45,7 @@ body {
   font-weight: 400;
 }
 
-.main > header > .title > p {
+.container > header > .title > p {
   font-size: 1rem;
   font-family: var(--font-paragraph);
   line-height: 150%;
@@ -253,7 +253,7 @@ hr {
     max-width: 100%;
   }
 
-  .main {
+  .container {
     padding: 0;
     max-width: none;
     margin: 0;
@@ -262,7 +262,7 @@ hr {
     flex-direction: column;
   }
 
-  .main > header > .title > h1 {
+  .container > header > .title > h1 {
     font-size: 2.5rem;
   }
 }
